@@ -1,6 +1,7 @@
 node default {
-  file {'/pms/test.log':
-   ensure => file,
-   content => 'I am an oolan'
+  file { '/root/README':
+    ensure => file,
+    content => 'This is a readme',
+    owner   => 'root',
   }
 }
